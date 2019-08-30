@@ -6,9 +6,9 @@ namespace Core
     {
         public Guid Id { get; protected set; }
 
-        public Aggregate()
+        public AggregateRootBase()
         {
-            
+            Id = Guid.NewGuid();
         }
     }
 }

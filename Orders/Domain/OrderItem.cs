@@ -57,7 +57,7 @@ namespace Orders.Domain
         /// Create a new random list of order items
         /// </summary>
         /// <returns></returns>
-        public static List<OrderItem> generateRandomOrderItems()
+        public static List<OrderItem> GenerateRandomOrderItems()
         {
             // List that holds the order items
             List<OrderItem> items = new List<OrderItem>();
