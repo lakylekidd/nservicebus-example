@@ -11,6 +11,7 @@ namespace Orders.Domain
         public double TotalAmount { get; private set; }
         public int ItemCount { get; private set; }
         public DateTime OrderDate { get; private set; }
+        public OrderStatus Status { get; private set; }
 
         private OrderAggregate()
         {
@@ -18,6 +19,11 @@ namespace Orders.Domain
             Items = OrderItem.GenerateRandomOrderItems();
             calculateItemCount();
             calculateTotalAmount();
+        }
+
+        public void ChangeOrderStatus(OrderStatus status)
+        {
+            Status = status;
         }
 
         private void calculateTotalAmount()
