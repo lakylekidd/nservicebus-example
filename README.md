@@ -9,7 +9,7 @@ This application will demonstrate the communication between four (4) microservic
 - Payments
 
 ## User Stories
-- [ ] As a customer I want to be able to place an order
+- [x] As a customer I want to be able to place an order
 - [ ] As a customer I want to be able to cancel an order that has been already placed
 - [ ] As a customer I want to be able to pay my order after it is placed
 - [ ] As a customer I want to get a refun when I cancel my order
