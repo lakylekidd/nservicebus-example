@@ -13,7 +13,10 @@ namespace Orders.Domain
 
         private OrderItem(string description, double price, int quantity)
         {
-
+            Id = Guid.NewGuid();
+            Description = description;
+            Price = price;
+            Quantity = quantity;
         }
 
         protected OrderItem()
@@ -21,7 +24,7 @@ namespace Orders.Domain
 
         }
 
-        private static OrderItem Create(string description, double price, int quantity = 1)
+        private static OrderItem Create(string description, double price, int quantity)
         {
             return new OrderItem(description, price, quantity);
         }
