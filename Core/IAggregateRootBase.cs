@@ -4,6 +4,6 @@ namespace Core
 {
     public interface IAggregateRootBase
     {
-        Guid Id { get }
+        Guid AggregateId { get }
     }
 }
