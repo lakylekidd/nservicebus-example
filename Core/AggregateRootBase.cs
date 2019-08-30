@@ -2,7 +2,7 @@
 
 namespace Core
 {
-    public class Aggregate: IAggregateRootBase
+    public class AggregateRootBase: IAggregateRootBase
     {
         public Guid Id { get; protected set; }
 
