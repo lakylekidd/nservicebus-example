@@ -6,8 +6,16 @@ namespace Notifications.Domain
     {
         public DateTime MessageDateTimeSent { get; }
         public string Destination { get; }
+        public string Title { get; }
         public string Content { get; }
         public MessageSendStatus Status { get; private set; }
+
+        private Message(string title, string content, string destination)
+        {
+            Content = content;
+            Destination = destination;
+            Status = MessageSendStatus.Created;
+        }
 
         private Message(string content, string destination)
         {
@@ -26,9 +34,14 @@ namespace Notifications.Domain
             Status = MessageSendStatus.Failed;
         }
 
-        public static Message Create(string content, string destination)
+        public static Message CreateAsSMS(string content, string destination)
         {
             return new Message(content, destination);
+        }
+
+        public static Message CreateAsEmail(string title, string content, string destination)
+        {
+            return new Message(title, content, destination);
         }
     }
 }
