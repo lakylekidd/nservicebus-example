@@ -10,17 +10,16 @@ namespace Payments.Infrastructure
     {
         private List<PaymentAggregate> _payments = new List<PaymentAggregate>();
 
+        public Task<PaymentAggregate> GetByOrderId(Guid orderId)
+        {
+            return Task.Run(() => {
+                return _payments.Where(x => x.OrderId == orderId).FirstOrDefault();
+            });
+        }
+
         public Task Create(PaymentAggregate payment)
         {
             return Task.Run(() => _payments.Add(payment));
-        }
-
-        public Task RefundPayment(Guid orderId)
-        {
-            return Task.Run(() => {
-                var payment = _payments.Where(x => x.OrderId == orderId).FirstOrDefault();
-                payment.RefundPayment();
-            });
         }
     }
 }

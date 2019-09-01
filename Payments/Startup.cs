@@ -36,7 +36,7 @@ namespace Payments
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             // Configure NServiceBus
-            var endpointConfiguration = new EndpointConfiguration("Assignment.Orders");
+            var endpointConfiguration = new EndpointConfiguration("Assignment.Payments");
             var transport = endpointConfiguration.UseTransport<LearningTransport>();
             endpointConfiguration.SendFailedMessagesTo("failed");
             endpointConfiguration.AuditProcessedMessagesTo("audit");

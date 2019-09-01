@@ -7,6 +7,6 @@ namespace Payments.Infrastructure
     public interface IPaymentRepository
     {
         Task Create(PaymentAggregate payment);
-        Task RefundPayment(Guid orderId);
+        Task<PaymentAggregate> GetByOrderId(Guid orderId);
     }
 }

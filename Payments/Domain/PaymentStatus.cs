@@ -2,7 +2,7 @@
 {
     public enum PaymentStatus
     { 
-        Created
+        Created,
         Processed,
         Refunded
     }
