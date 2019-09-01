@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Core.Messages.Commands;
+using Microsoft.AspNetCore.Mvc;
 using NServiceBus;
-using Orders.Commands;
 using Orders.Domain;
 using Orders.Infrastructure;
 using System.Threading.Tasks;
@@ -20,7 +20,8 @@ namespace Orders.Controllers
             _orderRepository = orderRepository;
         }
 
-        [HttpPost]
+
+        [HttpGet]
         public async Task<ActionResult> Create()
         {
             // Create a new random order
@@ -29,7 +30,7 @@ namespace Orders.Controllers
             await _orderRepository.Create(order);
             // Send the command
             await _endpointInstance.Send(new PlaceOrderCommand(order.AggregateId));
-
+            // Return the order
             return Ok(order);
         }
     }

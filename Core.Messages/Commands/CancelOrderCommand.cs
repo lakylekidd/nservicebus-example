@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Orders.Commands
+namespace Core.Messages.Commands
 {
     public class CancelOrderCommand : Command
     {

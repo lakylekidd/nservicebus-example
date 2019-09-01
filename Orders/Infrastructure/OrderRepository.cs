@@ -8,9 +8,9 @@ namespace Orders.Infrastructure
     {
         private List<OrderAggregate> _orders = new List<OrderAggregate>();
 
-        public async void Create(OrderAggregate order)
+        public Task Create(OrderAggregate order)
         {
-            await Task.Run(() => _orders.Add(order));
+            return Task.Run(() => _orders.Add(order));
         }
     }
 }
