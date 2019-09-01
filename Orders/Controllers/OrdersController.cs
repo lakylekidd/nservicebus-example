@@ -22,7 +22,7 @@ namespace Orders.Controllers
 
 
         [HttpGet]
-        public async Task<ActionResult> Create()
+        public async Task<ActionResult> PlaceOrder()
         {            
             // Send the command
             await _endpointInstance.Send("Assignment.Orders", new PlaceOrderCommand());
