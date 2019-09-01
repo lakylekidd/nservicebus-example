@@ -1,6 +1,7 @@
 ﻿using Payments.Domain;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Payments.Infrastructure
@@ -16,7 +17,10 @@ namespace Payments.Infrastructure
 
         public Task RefundPayment(Guid orderId)
         {
-            throw new NotImplementedException();
+            return Task.Run(() => {
+                var payment = _payments.Where(x => x.OrderId == orderId).FirstOrDefault();
+                payment.RefundPayment();
+            });
         }
     }
 }
