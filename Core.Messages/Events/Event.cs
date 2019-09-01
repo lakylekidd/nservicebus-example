@@ -7,7 +7,7 @@ namespace Core.Messages.Events
     {
         public DateTime EventDateTime { get; }
 
-        public Event(G)
+        public Event()
         {
             EventDateTime = DateTime.Now;
         }

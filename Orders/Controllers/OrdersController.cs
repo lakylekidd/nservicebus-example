@@ -23,15 +23,11 @@ namespace Orders.Controllers
 
         [HttpGet]
         public async Task<ActionResult> Create()
-        {
-            // Create a new random order
-            var order = OrderAggregate.Create();
-            // Save order in database
-            await _orderRepository.Create(order);
+        {            
             // Send the command
-            await _endpointInstance.Send(new PlaceOrderCommand(order.AggregateId));
+            await _endpointInstance.Send("Assignment.Orders", new PlaceOrderCommand());
             // Return the order
-            return Ok(order);
+            return Ok();
         }
     }
 }

@@ -6,8 +6,7 @@ namespace Core.Messages.Commands
     {
         public DateTime OrderCancellationDateTime { get; }
 
-        public CancelOrderCommand(Guid id)
-            : base(id)
+        public CancelOrderCommand()
         {
             OrderCancellationDateTime = DateTime.Now;
         }
