@@ -8,12 +8,14 @@ namespace Payments.Domain
 {
     public class PaymentAggregate : AggregateRootBase
     {
+        public Guid OrderId { get; }
         public DateTime PaymentDateTime { get; }
         public double Amount { get; }
         public PaymentStatus Status { get; private set; }
 
-        private PaymentAggregate(double amount)
+        private PaymentAggregate(Guid orderId, double amount)
         {
+            OrderId = orderId;
             Amount = amount;
             PaymentDateTime = DateTime.Now;
             Status = PaymentStatus.Created;
@@ -29,9 +31,9 @@ namespace Payments.Domain
             Status = PaymentStatus.Refunded;
         }
 
-        public static PaymentAggregate Create(double amount)
+        public static PaymentAggregate Create(Guid orderId, double amount)
         {
-            return new PaymentAggregate(amount);
+            return new PaymentAggregate(orderId, amount);
         }
     }
 }
