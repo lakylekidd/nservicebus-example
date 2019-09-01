@@ -3,16 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{FA6781C2-0721-4246-AD1B-4E0C1D63DD91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csproj", "{FA6781C2-0721-4246-AD1B-4E0C1D63DD91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{35E649F1-0B68-41A3-B461-7799D7DD5E70}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{4D295886-530C-4CDB-B8DE-08D75D080840}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{4D295886-530C-4CDB-B8DE-08D75D080840}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Messages", "Core.Messages\Core.Messages.csproj", "{B750758A-8577-4A9D-B1AF-26BDA54D9BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Messages", "Core.Messages\Core.Messages.csproj", "{B750758A-8577-4A9D-B1AF-26BDA54D9BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments", "Payments\Payments.csproj", "{F0A03C74-1934-4B9E-873D-CF48246B4AA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +34,10 @@ Global
 		{B750758A-8577-4A9D-B1AF-26BDA54D9BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B750758A-8577-4A9D-B1AF-26BDA54D9BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B750758A-8577-4A9D-B1AF-26BDA54D9BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0A03C74-1934-4B9E-873D-CF48246B4AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0A03C74-1934-4B9E-873D-CF48246B4AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0A03C74-1934-4B9E-873D-CF48246B4AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0A03C74-1934-4B9E-873D-CF48246B4AA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
