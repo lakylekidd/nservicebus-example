@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Notifications.Infrastructure;
-using Payments.Infrastructure;
 using System.Threading.Tasks;
 
 namespace Payments.Controllers
