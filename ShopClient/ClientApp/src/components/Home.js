@@ -15,7 +15,7 @@ export class Home extends Component {
         request.get("http://localhost:51107/api/orders/place")
             .then(res => {
                 if (res.statusCode === 200) {
-                    setTimeout(() => { this.getOrders(); }, 2000);
+                    setTimeout(() => { this.getOrders(); }, 1000);
                 }
             });
     }
@@ -35,8 +35,7 @@ export class Home extends Component {
         request.get(`http://localhost:51107/api/orders/cancel?id=${id}`)
             .then(res => {
                 if (res.statusCode === 200) {
-                    console.log(JSON.parse(res.text));
-                    this.getOrders();
+                    setTimeout(() => { this.getOrders(); }, 1000);
                 }
             })
             .catch(console.error);
