@@ -22,7 +22,7 @@ namespace Orders.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("place")]
         public async Task<ActionResult> PlaceOrder()
         {            
             // Send the command
@@ -31,7 +31,7 @@ namespace Orders.Controllers
             return Ok();
         }
 
-        [HttpDelete]
+        [HttpGet("cancel")]
         public async Task<ActionResult> CancelOrder([FromBody] Guid id)
         {
             // Send the command
