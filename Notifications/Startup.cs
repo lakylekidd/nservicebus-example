@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Notifications.Infrastructure;
 using Notifications.Services;
 using NServiceBus;
 using NServiceBus.ObjectBuilder.MSDependencyInjection;
@@ -30,6 +31,12 @@ namespace Notifications
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
+            services.AddSingleton<IMessageRepository, MessageRepository>();
             services.AddTransient<EmailService>();
             services.AddTransient<SMSService>();
             services.AddTransient<Func<NotificationType, INotificationService>>(serviceProvider => key =>
@@ -86,6 +93,7 @@ namespace Notifications
                 app.UseHsts();
             }
 
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseHttpsRedirection();
             app.UseMvc();
         }
