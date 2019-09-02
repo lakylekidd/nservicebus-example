@@ -22,7 +22,7 @@ namespace Notifications.Handlers
             INotificationService emailService = _notificationServiceDelegate(NotificationType.Email);
             // Create order placed message
             var emailMessage = Message.CreateAsEmail(
-                "Order Cancelled!",
+                "Order " + message.OrderId + " Cancelled!",
                 "Your order has been cancelled! If that was an error, please contact customer support at support@mail.com.",
                 "client@email.com"
                 );

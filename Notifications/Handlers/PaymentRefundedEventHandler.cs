@@ -22,7 +22,7 @@ namespace Notifications.Handlers
             INotificationService emailService = _notificationServiceDelegate(NotificationType.Email);
             // Create order placed message
             var emailMessage = Message.CreateAsEmail(
-                "Order Refund!",
+                "Order for  " + message.OrderId + " Refunded!",
                 "Your order has been refunded successfully. You will receive your money back to your account within a few days.",
                 "client@email.com"
                 );

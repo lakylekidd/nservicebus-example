@@ -22,7 +22,7 @@ namespace Notifications.Handlers
             INotificationService emailService = _notificationServiceDelegate(NotificationType.Email);
             // Create order placed message
             var emailMessage = Message.CreateAsEmail(
-                "Payment Completed successfully!",
+                "Payment for " + message.OrderId + " Completed successfully!",
                 "Your payment has been processed successfully!",
                 "client@email.com"
                 );
