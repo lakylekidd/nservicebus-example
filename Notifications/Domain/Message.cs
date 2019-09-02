@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Core;
+using System;
 
 namespace Notifications.Domain
 {
-    public class Message
+    public class Message : AggregateRootBase
     {
         public DateTime MessageDateTimeSent { get; }
         public string Destination { get; }
@@ -12,6 +13,7 @@ namespace Notifications.Domain
 
         private Message(string title, string content, string destination)
         {
+            Title = title;
             Content = content;
             Destination = destination;
             Status = MessageSendStatus.Created;

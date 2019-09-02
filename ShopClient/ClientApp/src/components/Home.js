@@ -5,21 +5,24 @@ export class Home extends Component {
     displayName = Home.name
     state = {
         orders: [],
-        payments: []
+        payments: [],
+        messages: []
     }
 
     componentDidMount() {
-        this.getOrders();
-        this.getPayments();
+        setInterval(() => { this.getOrders(); }, 1000);
+        setInterval(() => { this.getPayments(); }, 1000);
+        setInterval(() => { this.getMessages(); }, 1000);
     }
 
     createOrder = () => {
         request.get("http://localhost:51107/api/orders/place")
             .then(res => {
-                if (res.statusCode === 200) {
-                    setTimeout(() => { this.getOrders(); }, 1000);
-                    setTimeout(() => { this.getPayments(); }, 1200);
-                }
+                //if (res.statusCode === 200) {
+                //    setTimeout(() => { this.getOrders(); }, 1000);
+                //    setTimeout(() => { this.getPayments(); }, 1200);
+                //    setTimeout(() => { this.getMessages(); }, 2500);
+                //}
             });
     }
 
@@ -28,6 +31,16 @@ export class Home extends Component {
             .then(res => {
                 if (res.statusCode === 200) {
                     this.setState({ payments: JSON.parse(res.text) });
+                }
+            })
+            .catch(console.error);
+    }
+
+    getMessages = () => {
+        request.get("http://localhost:52030/api/messages/all")
+            .then(res => {
+                if (res.statusCode === 200) {
+                    this.setState({ messages: JSON.parse(res.text) });
                 }
             })
             .catch(console.error);
@@ -46,10 +59,11 @@ export class Home extends Component {
     cancelOrder = (id) => {
         request.get(`http://localhost:51107/api/orders/cancel?id=${id}`)
             .then(res => {
-                if (res.statusCode === 200) {
-                    setTimeout(() => { this.getOrders(); }, 1000);
-                    setTimeout(() => { this.getPayments(); }, 1500);
-                }
+                //if (res.statusCode === 200) {
+                //    setTimeout(() => { this.getOrders(); }, 1000);
+                //    setTimeout(() => { this.getMessages(); }, 1500);
+                //    setTimeout(() => { this.getPayments(); }, 2800);
+                //}
             })
             .catch(console.error);
     }
@@ -71,10 +85,21 @@ export class Home extends Component {
     renderPaymentRows = (payments) => {
         return payments.map(payment => {
             return (
-                <tr key={payment.orderId}>
+                <tr key={payment.aggregateId}>
                     <td>{payment.orderId}</td>
                     <td>{payment.amount}</td>
                     <td>{payment.status === 0 ? "Created" : payment.status === 1 ? "Processed" : "Refunded"}</td>
+                </tr>
+            );
+        });
+    }
+
+    renderMessageRows = (messages) => {
+        return messages.map(message => {
+            return (
+                <tr key={message.aggregateId}>
+                    <td>{message.title}</td>
+                    <td>{message.status === 0 ? "Created" : message.status === 1 ? "Sent" : "Failed"}</td>
                 </tr>
             );
         });
@@ -122,6 +147,25 @@ export class Home extends Component {
             );
     }
 
+    renderMessagesTable = () => {
+        console.log(this.state.messages);
+        if (this.state.messages.length === 0) return "No messages found";
+        else
+            return (
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <td>Title</td>
+                            <td>Type</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderMessageRows(this.state.messages)}
+                    </tbody>
+                </table>
+            );
+    }
+
   render() {
     return (
       <div>
@@ -133,6 +177,9 @@ export class Home extends Component {
             <br />
             <h3>Payments</h3>
             {this.renderPaymentsTable()}
+            <br />
+            <h3>Messages</h3>
+            {this.renderMessagesTable()}
       </div>
     );
   }
