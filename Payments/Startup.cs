@@ -30,6 +30,10 @@ namespace Payments
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
 
             services.AddSingleton<IPaymentRepository, PaymentRepository>();
             services.AddSingleton(sp => endpoint);
@@ -72,6 +76,7 @@ namespace Payments
                 app.UseHsts();
             }
 
+            app.UseCors(options => options.AllowAnyOrigin());
             app.UseHttpsRedirection();
             app.UseMvc();
         }
