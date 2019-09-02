@@ -21,5 +21,10 @@ namespace Payments.Infrastructure
         {
             return Task.Run(() => _payments.Add(payment));
         }
+
+        public Task<List<PaymentAggregate>> GetAll()
+        {
+            return Task.Run(() => _payments.ToList());
+        }
     }
 }

@@ -6,8 +6,8 @@ namespace Core.Messages.Events
 {
     public class OrderCancelledEvent : Event
     {
-        public Guid OrderId { get; }
-        public DateTime CancellationDateTime { get; }
+        public Guid OrderId { get; private set; }
+        public DateTime CancellationDateTime { get; private set; }
 
         public OrderCancelledEvent(Guid id, DateTime cancellationDateTime)
         {

@@ -6,9 +6,9 @@ namespace Core.Messages.Events
 {
     public class PaymentRefundedEvent : Event
     {
-        public Guid OrderId { get; }
-        public DateTime RefundDateTime { get; }
-        public double Amount { get; }
+        public Guid OrderId { get; private set; }
+        public DateTime RefundDateTime { get; private set; }
+        public double Amount { get; private set; }
 
         public PaymentRefundedEvent(Guid orderId, DateTime refundDateTime, double amount)
         {

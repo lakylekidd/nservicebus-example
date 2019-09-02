@@ -5,7 +5,7 @@ namespace Core.Messages.Events
 {
     public class Event : IEvent
     {
-        public DateTime EventDateTime { get; }
+        public DateTime EventDateTime { get; private set; }
 
         public Event()
         {

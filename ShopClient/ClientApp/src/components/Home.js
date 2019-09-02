@@ -4,11 +4,13 @@ import * as request from 'superagent';
 export class Home extends Component {
     displayName = Home.name
     state = {
-        orders: []
+        orders: [],
+        payments: []
     }
 
     componentDidMount() {
         this.getOrders();
+        this.getPayments();
     }
 
     createOrder = () => {
@@ -16,15 +18,25 @@ export class Home extends Component {
             .then(res => {
                 if (res.statusCode === 200) {
                     setTimeout(() => { this.getOrders(); }, 1000);
+                    setTimeout(() => { this.getPayments(); }, 1200);
                 }
             });
+    }
+
+    getPayments = () => {
+        request.get("http://localhost:51066/api/payments/all")
+            .then(res => {
+                if (res.statusCode === 200) {
+                    this.setState({ payments: JSON.parse(res.text) });
+                }
+            })
+            .catch(console.error);
     }
 
     getOrders = () => {
         request.get("http://localhost:51107/api/orders/all")
             .then(res => {
                 if (res.statusCode === 200) {
-                    //console.log(JSON.parse(res.text));
                     this.setState({ orders: JSON.parse(res.text) });
                 }                
             })
@@ -36,6 +48,7 @@ export class Home extends Component {
             .then(res => {
                 if (res.statusCode === 200) {
                     setTimeout(() => { this.getOrders(); }, 1000);
+                    setTimeout(() => { this.getPayments(); }, 1500);
                 }
             })
             .catch(console.error);
@@ -55,7 +68,19 @@ export class Home extends Component {
         });
     }
 
-    renderOrders = () => {
+    renderPaymentRows = (payments) => {
+        return payments.map(payment => {
+            return (
+                <tr key={payment.orderId}>
+                    <td>{payment.orderId}</td>
+                    <td>{payment.amount}</td>
+                    <td>{payment.status === 0 ? "Created" : payment.status === 1 ? "Processed" : "Refunded"}</td>
+                </tr>
+            );
+        });
+    }
+
+    renderOrdersTable = () => {
         console.log(this.state.orders);
         if (this.state.orders.length === 0) return "No orders found";
         else
@@ -77,13 +102,37 @@ export class Home extends Component {
         );
     }
 
+    renderPaymentsTable = () => {
+        console.log(this.state.payments);
+        if (this.state.payments.length === 0) return "No payments found";
+        else
+            return (
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <td>Order ID</td>
+                            <td>Amount</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.renderPaymentRows(this.state.payments)}
+                    </tbody>
+                </table>
+            );
+    }
+
   render() {
     return (
       <div>
             <h1>NServiceBus with Microservices</h1>
             <button onClick={this.createOrder}>Create Order</button>
             <br />
-            { this.renderOrders() }
+            <h3>Orders</h3>
+            {this.renderOrdersTable()}
+            <br />
+            <h3>Payments</h3>
+            {this.renderPaymentsTable()}
       </div>
     );
   }
