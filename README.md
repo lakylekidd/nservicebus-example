@@ -4,7 +4,6 @@ This is a sample project to demonstrate the use of NServiceBus when it comes to 
 ## Description
 This application will demonstrate the communication between four (4) microservices when it comes to the lifecycle of a product order. These are the microservices involved
 - Orders
-- Sales
 - Notifications
 - Payments
 
