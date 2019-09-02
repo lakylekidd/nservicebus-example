@@ -21,6 +21,12 @@ namespace Orders.Controllers
             _orderRepository = orderRepository;
         }
 
+        [HttpGet("all")]
+        public async Task<ActionResult> GetOrders()
+        {
+            var orders = await _orderRepository.GetAll();
+            return Ok(orders);
+        }
 
         [HttpGet("place")]
         public async Task<ActionResult> PlaceOrder()

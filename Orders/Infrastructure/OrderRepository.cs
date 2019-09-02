@@ -22,5 +22,13 @@ namespace Orders.Infrastructure
         {
             return Task.Run(() => _orders.Add(order));
         }
+
+        public Task<List<OrderAggregate>> GetAll()
+        {
+            return Task.Run(() =>
+            {
+                return _orders.ToList();
+            });
+        }
     }
 }
