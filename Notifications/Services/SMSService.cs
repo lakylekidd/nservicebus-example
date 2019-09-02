@@ -1,5 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Notifications.Domain;
 
 namespace Notifications.Services
@@ -8,7 +7,8 @@ namespace Notifications.Services
     {
         public Task Send(Message message)
         {
-            throw new NotImplementedException();
+            // Simulate an SMS send operation
+            return Task.Delay(3000);
         }
     }
 }
