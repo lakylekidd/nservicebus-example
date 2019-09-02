@@ -1,5 +1,6 @@
 ﻿using Core.Messages.Events;
 using Notifications.Domain;
+using Notifications.Infrastructure;
 using Notifications.Services;
 using NServiceBus;
 using System;
@@ -10,10 +11,12 @@ namespace Notifications.Handlers
     public class PaymentRefundedEventHandler : IHandleMessages<PaymentRefundedEvent>
     {
         private Func<NotificationType, INotificationService> _notificationServiceDelegate;
+        private IMessageRepository _messageRepository;
 
-        public PaymentRefundedEventHandler(Func<NotificationType, INotificationService> notificationServiceDelegate)
+        public PaymentRefundedEventHandler(Func<NotificationType, INotificationService> notificationServiceDelegate, IMessageRepository messageRepository)
         {
             _notificationServiceDelegate = notificationServiceDelegate;
+            _messageRepository = messageRepository;
         }
 
         public async Task Handle(PaymentRefundedEvent message, IMessageHandlerContext context)
@@ -26,6 +29,8 @@ namespace Notifications.Handlers
                 "Your order has been refunded successfully. You will receive your money back to your account within a few days.",
                 "client@email.com"
                 );
+            // Save message
+            await _messageRepository.Create(emailMessage);
             // Send the message
             await emailService.Send(emailMessage);
         }
