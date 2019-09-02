@@ -12,10 +12,10 @@ namespace Orders.Infrastructure
 
         public Task CancelOrder(Guid id)
         {
-            return Task.Run(() => {
-                var order = _orders.Where(x => x.AggregateId == id).FirstOrDefault();
-                order.ChangeOrderStatus(OrderStatus.Cancelled);
-            });            
+            var order = _orders.FirstOrDefault(x => x.AggregateId == id);
+            if (order != null) order.ChangeOrderStatus(OrderStatus.Cancelled);
+
+            return Task.FromResult(0);          
         }
 
         public Task Create(OrderAggregate order)

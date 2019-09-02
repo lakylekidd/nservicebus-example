@@ -38,12 +38,13 @@ namespace Orders.Controllers
         }
 
         [HttpGet("cancel")]
-        public async Task<ActionResult> CancelOrder([FromBody] Guid id)
+        public async Task<ActionResult> CancelOrder([FromQuery] Guid id)
         {
+            var command = new CancelOrderCommand(id);
             // Send the command
-            await _endpointInstance.Send("Assignment.Orders", new CancelOrderCommand(id));
+            await _endpointInstance.Send("Assignment.Orders", command);
             // Return the order
-            return Ok();
+            return Ok(id);
         }
     }
 }

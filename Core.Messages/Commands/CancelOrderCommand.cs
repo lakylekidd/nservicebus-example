@@ -4,8 +4,8 @@ namespace Core.Messages.Commands
 {
     public class CancelOrderCommand : Command
     {
-        public Guid OrderId { get; }
-        public DateTime OrderCancellationDateTime { get; }
+        public Guid OrderId { get; private set; }
+        public DateTime OrderCancellationDateTime { get; private set; }
 
         public CancelOrderCommand(Guid id)
         {
