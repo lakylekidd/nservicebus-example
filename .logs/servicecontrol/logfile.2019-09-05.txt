@@ -1,0 +1,262 @@
+2019-09-05 10:31:28.4945|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-09-05 10:31:30.0952|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             4.0.0.0
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+Database Size:                      0 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-09-05 10:31:31.1972|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-09-05 10:31:38.3255|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-09-05 10:31:54.1390|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-09-05 10:31:54.3435|1|Info|NServiceBus.LicenseManager|No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-09-05 10:31:54.8950|15|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-09-05 10:31:54.9718|17|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:31:55.1264|40|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:31:57.7334|39|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-09-05 10:32:25.1512|58|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:32:25.1612|56|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:32:55.1773|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:32:55.1773|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:33:25.1906|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:33:25.1906|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:33:55.1978|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:33:55.1978|41|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:34:25.2119|17|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:34:25.2119|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:34:55.2238|58|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:34:55.2238|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:35:25.2304|38|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:35:25.2304|65|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:35:55.2462|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:35:55.2462|17|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:36:25.2594|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:36:25.2594|68|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:36:55.2754|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:36:55.2754|40|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:37:25.2889|17|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:37:25.2889|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:37:55.3007|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:37:55.3007|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:38:25.3068|68|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:38:25.3068|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:38:55.3157|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:38:55.3157|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:39:25.3255|53|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:39:25.3314|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:39:55.3386|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:39:55.3386|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:40:25.3519|42|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:40:25.3519|40|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:40:55.3652|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:40:55.3652|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:41:17.5329|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-09-05 10:41:18.8564|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             4.0.0.0
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+Database Size:                      1048576 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-09-05 10:41:19.9554|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-09-05 10:41:29.1241|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-09-05 10:41:31.4399|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-09-05 10:41:31.7282|1|Info|NServiceBus.LicenseManager|No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-09-05 10:41:32.3325|14|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-09-05 10:41:32.3684|15|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:41:32.4951|20|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:41:33.1065|13|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'ba852cc8-c1af-4813-baec-bfb73bc7c98c' as the specified TimeToBeReceived of '00:02:00' expired since sending the message at '2019-09-05T08:37:56.1355023Z'. Current UTC time is '2019-09-05T08:41:33.1045275Z'
+2019-09-05 10:41:35.2029|20|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-09-05 10:42:02.5235|44|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:42:02.5235|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:42:24.5002|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-09-05 10:42:25.7399|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             4.0.0.0
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+Database Size:                      1048576 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-09-05 10:42:26.9297|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-09-05 10:42:32.5407|20|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:42:32.5507|19|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:43:02.5514|16|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:43:02.5514|20|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:43:32.5657|44|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:43:32.5657|16|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:44:02.5822|60|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:44:02.5822|59|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:44:32.5906|49|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:44:32.5976|15|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:45:02.6011|72|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:45:02.6011|72|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:45:32.6219|49|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:45:32.6219|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:46:02.6377|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:46:02.6437|15|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:46:32.6458|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:46:32.6458|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:47:02.6617|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:47:02.6617|18|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:47:32.6781|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:47:32.6781|49|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:48:02.6855|49|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:48:02.6914|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:48:32.6934|71|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:48:32.6934|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:49:02.7082|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:49:02.7082|58|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:49:32.7230|15|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:49:32.7230|59|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:50:02.7374|65|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:50:02.7374|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:50:32.7540|65|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:50:32.7540|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:51:02.7639|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:51:02.7708|59|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:51:27.4435|14|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ErrorMessageCleaner|No expired error documents found
+2019-09-05 10:51:27.4565|14|Info|ServiceControl.Infrastructure.RavenDB.Expiration.EventLogItemsCleaner|No expired event log documents found
+2019-09-05 10:51:32.7741|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:51:32.7741|71|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:52:02.7883|59|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:52:02.7883|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:52:32.8001|53|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:52:32.8001|59|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:53:02.8080|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:53:02.8080|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:53:32.8231|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:53:32.8231|53|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:54:02.8343|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:54:02.8343|13|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:54:32.8492|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:54:32.8492|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:55:02.8654|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:55:02.8654|53|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:55:32.8788|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:55:32.8788|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:56:02.8947|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:56:02.8947|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:56:32.9147|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:56:32.9147|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:57:02.9335|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:57:02.9405|13|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:57:32.9514|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:57:32.9574|53|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:58:02.9657|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:58:02.9717|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:58:32.9940|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:58:32.9940|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:59:03.0050|71|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:59:03.0050|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 10:59:33.0233|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 10:59:33.0233|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:00:03.0439|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:00:03.0499|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:00:33.0519|64|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:00:33.0519|51|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:01:03.0655|66|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:01:03.0655|14|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:01:27.4598|51|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ErrorMessageCleaner|No expired error documents found
+2019-09-05 11:01:27.4598|51|Info|ServiceControl.Infrastructure.RavenDB.Expiration.EventLogItemsCleaner|No expired event log documents found
+2019-09-05 11:01:33.0822|58|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:01:33.1002|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:02:03.1142|57|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:02:03.1142|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:02:33.1307|43|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:02:33.1307|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:02:54.2155|51|Info|NServiceBus.RunningEndpointInstance|Initiating shutdown.
+2019-09-05 11:02:54.4439|51|Info|NServiceBus.RunningEndpointInstance|Shutdown complete.
+2019-09-05 11:03:19.2880|1|Info|ServiceBus.Management.Infrastructure.Settings.Settings|No settings found for error log queue to import, default name will be used
+2019-09-05 11:03:19.9961|1|Info|Particular.ServiceControl.Bootstrapper|
+-------------------------------------------------------------
+ServiceControl Version:             4.0.0.0
+Audit Retention Period (optional):  
+Error Retention Period:             10.00:00:00
+Ingest Error Messages:              True
+Forwarding Error Messages:          False
+Database Size:                      1048576 bytes
+ServiceControl Logging Level:       Info
+RavenDB Logging Level:              Warn
+Selected Transport Customization:   ServiceControl.Transports.Learning.LearningTransportCustomization, ServiceControl.Transports.Learning
+-------------------------------------------------------------
+2019-09-05 11:03:21.2737|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Loading Embedded RavenDB license
+2019-09-05 11:03:31.0945|1|Info|ServiceControl.Infrastructure.RavenDB.RavenBootstrapper|Index creation started
+2019-09-05 11:03:33.7225|1|Warn|NServiceBus.TransportExtensions|A connection string named 'NServiceBus/Transport' was found. Using named connection strings is discouraged. Instead, load the connection string in your code and pass the value to EndpointConfiguration.UseTransport().ConnectionString(connectionString).
+2019-09-05 11:03:33.9369|1|Info|NServiceBus.LicenseManager|No valid license could be found. Falling back to trial license with start date '2019-08-30'.
+
+2019-09-05 11:03:34.6171|8|Info|ServiceControl.Recoverability.RetryDocumentManager|Found 0 orphaned retry batches from previous sessions.
+2019-09-05 11:03:34.6649|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:03:34.8016|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:03:35.4099|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '17bff105-3365-4509-bad9-ce80abd1230a' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:58:31.8481074Z'. Current UTC time is '2019-09-05T09:03:35.4060024Z'
+2019-09-05 11:03:35.4099|12|Info|NServiceBus.LearningTransportMessagePump|Dropping message '38ceebd3-9f02-472d-8fe4-282bb1a5cde2' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:51:40.4899835Z'. Current UTC time is '2019-09-05T09:03:35.4079994Z'
+2019-09-05 11:03:35.4099|8|Info|NServiceBus.LearningTransportMessagePump|Dropping message '5a6304fc-b958-4dd8-a665-f142aaa15ed1' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:56:10.8355142Z'. Current UTC time is '2019-09-05T09:03:35.4159757Z'
+2019-09-05 11:03:35.4099|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '5ccc9c75-a160-49bd-be3e-b0bb21afdc3f' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:52:10.5239932Z'. Current UTC time is '2019-09-05T09:03:35.4209611Z'
+2019-09-05 11:03:35.4099|11|Info|NServiceBus.LearningTransportMessagePump|Dropping message '1fe1c466-4a34-48d5-9501-3cd41f914919' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:48:21.0821341Z'. Current UTC time is '2019-09-05T09:03:35.4169722Z'
+2019-09-05 11:03:35.4299|12|Info|NServiceBus.LearningTransportMessagePump|Dropping message '5fafd16c-026c-4506-b155-00813a42f28a' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:49:11.1606681Z'. Current UTC time is '2019-09-05T09:03:35.4279427Z'
+2019-09-05 11:03:35.4299|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message '7981a063-8b5f-42a0-8801-2660659e7e42' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:57:04.8185014Z'. Current UTC time is '2019-09-05T09:03:35.4369181Z'
+2019-09-05 11:03:35.4448|12|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'a2368897-d148-403f-979a-f87ff47834b7' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:54:00.6765415Z'. Current UTC time is '2019-09-05T09:03:35.4439002Z'
+2019-09-05 11:03:35.4448|11|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'bcf6e11b-4d5f-4116-9e73-0a8fd33982f6' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:59:45.0426629Z'. Current UTC time is '2019-09-05T09:03:35.4439002Z'
+2019-09-05 11:03:35.4618|8|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'c102975b-200b-4a06-a359-a28c13d8b92f' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:47:31.0075951Z'. Current UTC time is '2019-09-05T09:03:35.4608540Z'
+2019-09-05 11:03:35.4618|9|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'c5d60090-1118-455b-8e47-c5b214a79c71' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:46:40.9446850Z'. Current UTC time is '2019-09-05T09:03:35.4678354Z'
+2019-09-05 11:03:35.4778|12|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'd52d32a3-9559-444d-a19d-57355b9d31c9' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T08:54:40.7242255Z'. Current UTC time is '2019-09-05T09:03:35.4758150Z'
+2019-09-05 11:03:35.4778|11|Info|NServiceBus.LearningTransportMessagePump|Dropping message 'c97f92da-e033-4597-857b-f012ee1c3fef' as the specified TimeToBeReceived of '00:00:40' expired since sending the message at '2019-09-05T09:00:05.0665728Z'. Current UTC time is '2019-09-05T09:03:35.4698305Z'
+2019-09-05 11:03:38.6293|5|Info|Particular.ServiceControl.Bootstrapper|Api is now accepting requests on http://localhost:49200/api
+2019-09-05 11:04:04.8323|48|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:04:04.8323|8|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:04:34.8478|44|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:04:34.8478|52|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:05:04.8640|70|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:05:04.8640|68|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:05:34.8800|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:05:34.8800|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:06:04.9018|11|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:06:04.9098|50|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:06:34.9272|50|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:06:34.9581|67|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:07:04.9810|48|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:07:04.9880|68|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:07:34.9890|10|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:07:34.9890|88|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:08:05.0100|89|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:08:05.0210|89|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:08:35.0274|75|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:08:35.0354|82|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:09:05.0383|83|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:09:05.0383|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:09:35.0555|78|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:09:35.0555|82|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:10:05.0745|74|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:10:05.0845|77|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:10:35.1003|82|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:10:35.1003|77|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:11:05.1125|79|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:11:05.1125|80|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:11:35.1353|51|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:11:35.1443|82|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:12:05.1451|87|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:12:05.1451|80|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:12:35.1650|88|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:12:35.1650|84|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:13:05.1788|70|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:13:05.1788|75|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.
+2019-09-05 11:13:29.3343|73|Info|ServiceControl.Infrastructure.RavenDB.Expiration.ErrorMessageCleaner|No expired error documents found
+2019-09-05 11:13:29.3343|73|Info|ServiceControl.Infrastructure.RavenDB.Expiration.EventLogItemsCleaner|No expired event log documents found
+2019-09-05 11:13:35.1956|12|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to forward.
+2019-09-05 11:13:35.2076|85|Info|ServiceControl.Recoverability.RetryProcessor|No batch found to stage.

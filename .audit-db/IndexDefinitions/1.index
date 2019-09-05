@@ -1,0 +1,28 @@
+{
+  "IndexId": 1,
+  "Name": "EndpointsIndex",
+  "LockMode": "Unlock",
+  "IndexVersion": 1,
+  "Map": "from message in docs.ProcessedMessages\nselect new {\n\tmessage = message,\n\tsending = (message.MessageMetadata[\"SendingEndpoint\"])\n} into this0\nselect new {\n\tthis0 = this0,\n\treceiving = (this0.message.MessageMetadata[\"ReceivingEndpoint\"])\n} into this1\nfrom endpoint in new[] {\n\tthis1.this0.sending,\n\tthis1.receiving\n}\nselect new {\n\tthis1 = this1,\n\tendpoint = endpoint\n} into this2\nwhere this2.endpoint != null\nselect new {\n\tHost = this2.endpoint.Host,\n\tHostId = this2.endpoint.HostId,\n\tName = this2.endpoint.Name\n}",
+  "Maps": [
+    "from message in docs.ProcessedMessages\nselect new {\n\tmessage = message,\n\tsending = (message.MessageMetadata[\"SendingEndpoint\"])\n} into this0\nselect new {\n\tthis0 = this0,\n\treceiving = (this0.message.MessageMetadata[\"ReceivingEndpoint\"])\n} into this1\nfrom endpoint in new[] {\n\tthis1.this0.sending,\n\tthis1.receiving\n}\nselect new {\n\tthis1 = this1,\n\tendpoint = endpoint\n} into this2\nwhere this2.endpoint != null\nselect new {\n\tHost = this2.endpoint.Host,\n\tHostId = this2.endpoint.HostId,\n\tName = this2.endpoint.Name\n}"
+  ],
+  "Reduce": "from result in results\ngroup result by new {\n\tName = result.Name,\n\tHostId = result.HostId\n} into grouped\nselect new {\n\tgrouped = grouped,\n\tfirst = DynamicEnumerable.FirstOrDefault(grouped)\n} into this0\nselect new {\n\tHost = this0.first.Host,\n\tHostId = this0.first.HostId,\n\tName = this0.first.Name\n}",
+  "IsMapReduce": true,
+  "IsCompiled": false,
+  "Stores": {},
+  "Indexes": {},
+  "SortOptions": {},
+  "Analyzers": {},
+  "Fields": [],
+  "Suggestions": null,
+  "SuggestionsOptions": [],
+  "TermVectors": {},
+  "SpatialIndexes": {},
+  "InternalFieldsMapping": {},
+  "MaxIndexOutputsPerDocument": null,
+  "Type": "MapReduce",
+  "DisableInMemoryIndexing": false,
+  "IsTestIndex": false,
+  "IsSideBySideIndex": false
+}

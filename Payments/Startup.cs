@@ -44,9 +44,9 @@ namespace Payments
             var transport = endpointConfiguration.UseTransport<LearningTransport>();
             endpointConfiguration.SendFailedMessagesTo("failed");
             endpointConfiguration.AuditProcessedMessagesTo("audit");
-            endpointConfiguration.SendHeartbeatTo("Assignment.ServiceControl");
+            endpointConfiguration.SendHeartbeatTo("Particular.ServiceControl");
             var metrics = endpointConfiguration.EnableMetrics();
-            metrics.SendMetricDataToServiceControl("Assignment.Monitoring", TimeSpan.FromMilliseconds(500));
+            metrics.SendMetricDataToServiceControl("Particular.Monitoring", TimeSpan.FromMilliseconds(500));
 
             UpdateableServiceProvider container = null;
             endpointConfiguration.UseContainer<ServicesBuilder>(customizations =>

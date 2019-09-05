@@ -18,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments", "Payments\Paymen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notifications", "Notifications\Notifications.csproj", "{E3282C23-23C3-4697-A001-8A73400DA39F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopClient", "ShopClient\ShopClient.csproj", "{B1F74C89-0BA1-4660-92BC-D836753CC372}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopClient", "ShopClient\ShopClient.csproj", "{B1F74C89-0BA1-4660-92BC-D836753CC372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform", "Platform\Platform.csproj", "{04233E7A-29FE-4526-AC33-58A72CD31173}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{B1F74C89-0BA1-4660-92BC-D836753CC372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1F74C89-0BA1-4660-92BC-D836753CC372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1F74C89-0BA1-4660-92BC-D836753CC372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04233E7A-29FE-4526-AC33-58A72CD31173}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04233E7A-29FE-4526-AC33-58A72CD31173}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04233E7A-29FE-4526-AC33-58A72CD31173}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04233E7A-29FE-4526-AC33-58A72CD31173}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,6 +21,7 @@ namespace Notifications.Handlers
 
         public async Task Handle(OrderCancelledEvent message, IMessageHandlerContext context)
         {
+            //throw new Exception("E-mail service unreachable");
             // Invoke e - mail notification service
             INotificationService emailService = _notificationServiceDelegate(NotificationType.Email);
             // Create order placed message

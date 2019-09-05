@@ -1,0 +1,38 @@
+2019-09-05 10:31:31.6440|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:31:39.4398|15|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:31:49.6939|36|Warn|Raven.Database.Prefetching.PrefetchingBehavior|WASTE: Discarding future work item without using it, to reduce memory usage
+2019-09-05 10:32:36.4924|62|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:33:31.6655|3|Warn|Raven.Database.Config.MemoryStatistics|Releasing memory before Garbage Collection operation
+2019-09-05 10:34:51.5875|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:37:36.4877|89|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:38:24.5248|99|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:41:29.2428|14|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:42:25.0897|50|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:42:32.7891|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:42:32.7362|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:42:37.5952|1|Error|Raven.Database.Server.RavenDBOptions|Found errors in the system database while loading it for the first time.
+                                    This is recoverable error, since we will simply ingore transactions after the faulted one.
+Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException: Cannot access file, the file is locked or in use
+   at Microsoft.Isam.Esent.Interop.Api.JetInit(JET_INSTANCE& instance)
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+2019-09-05 10:42:37.6122|1|Error|Raven.Database.DocumentDatabase|Could not initialize transactional storage, not creating database
+System.InvalidOperationException: Could not write to location: C:\Users\willi\Source\repos\assignments\nservicebus-example\NServiceBusExample\.audit-db\. Make sure you have read/write permissions for this path. ---> Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException: Cannot access file, the file is locked or in use
+   at Microsoft.Isam.Esent.Interop.Api.JetInit(JET_INSTANCE& instance)
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+   --- End of inner exception stack trace ---
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+   at Raven.Database.DocumentDatabase.DocumentDatabaseInitializer.InitializeTransactionalStorage(IUuidGenerator uuidGenerator, Action`2 onErrorAction)
+   at Raven.Database.DocumentDatabase..ctor(InMemoryRavenConfiguration configuration, DocumentDatabase systemDatabase, TransportState recievedTransportState, Action`2 onError)
+2019-09-05 10:45:57.7279|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:47:25.0817|18|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:48:12.0313|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:52:25.0831|42|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:57:25.0836|16|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:02:25.0905|14|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:03:31.5941|5|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 11:04:29.1350|8|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:05:24.7806|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:08:11.9585|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:09:29.1314|9|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:10:12.1945|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:13:11.7622|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...

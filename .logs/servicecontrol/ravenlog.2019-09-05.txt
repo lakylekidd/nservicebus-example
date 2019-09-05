@@ -1,0 +1,124 @@
+2019-09-05 10:31:31.6540|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:31:39.6562|15|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:32:36.4814|17|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:33:31.6695|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory simulation, will try to reduce memory usage...
+2019-09-05 10:33:31.7344|42|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/61fCDCgi1wA/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 10:34:51.5845|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:34:51.5975|58|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/61fCDCgi1wA/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 10:36:40.9904|67|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:37:36.4738|58|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:41:30.0851|14|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:42:27.5222|19|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:42:32.7622|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:42:32.7871|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:42:32.8699|50|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/6FA64QEEs7y/9C2vAJf6Uvw
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 10:42:38.1139|1|Error|Raven.Database.Server.RavenDBOptions|Found errors in the system database while loading it for the first time.
+                                    This is recoverable error, since we will simply ingore transactions after the faulted one.
+Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException: Cannot access file, the file is locked or in use
+   at Microsoft.Isam.Esent.Interop.Api.JetInit(JET_INSTANCE& instance)
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+2019-09-05 10:42:38.1338|1|Error|Raven.Database.DocumentDatabase|Could not initialize transactional storage, not creating database
+System.InvalidOperationException: Could not write to location: C:\Users\willi\Source\repos\assignments\nservicebus-example\NServiceBusExample\.db\. Make sure you have read/write permissions for this path. ---> Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException: Cannot access file, the file is locked or in use
+   at Microsoft.Isam.Esent.Interop.Api.JetInit(JET_INSTANCE& instance)
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+   --- End of inner exception stack trace ---
+   at Raven.Storage.Esent.TransactionalStorage.Initialize(IUuidGenerator uuidGenerator, OrderedPartCollection`1 documentCodecs, Action`1 putResourceMarker, Action`2 onErrorAction)
+   at Raven.Database.DocumentDatabase.DocumentDatabaseInitializer.InitializeTransactionalStorage(IUuidGenerator uuidGenerator, Action`2 onErrorAction)
+   at Raven.Database.DocumentDatabase..ctor(InMemoryRavenConfiguration configuration, DocumentDatabase systemDatabase, TransportState recievedTransportState, Action`2 onError)
+2019-09-05 10:45:57.7279|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:45:57.7279|71|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/6FA64QEEs7y/9C2vAJf6Uvw
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 10:46:30.7100|18|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:47:27.5049|54|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:48:12.0303|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 10:48:12.0373|43|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/6FA64QEEs7y/9C2vAJf6Uvw
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 10:51:30.7246|66|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:52:27.5193|74|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 10:56:30.7904|71|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 10:57:27.5301|67|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:01:31.7548|57|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 11:02:27.5390|71|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:03:32.1137|9|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 11:04:29.3993|52|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:05:24.9352|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:05:25.0628|11|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/5o4Elx5Xzot/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 11:08:11.9575|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:08:11.9575|48|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/5o4Elx5Xzot/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 11:08:33.2551|68|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
+2019-09-05 11:09:29.3937|73|Warn|Raven.Database.Plugins.Builtins.CheckFreeDiskSpace|Database disk (C:\) has less than 15% free space.
+2019-09-05 11:10:12.1925|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:10:12.1925|82|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/5o4Elx5Xzot/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 11:13:11.7692|3|Warn|Raven.Database.Config.MemoryStatistics|Low memory detected, will try to reduce memory usage...
+2019-09-05 11:13:11.7931|87|Error|Raven.Client.Changes.RemoteChangesClientBase`3|Got error from server connection for http://localhost on id 1/5o4Elx5Xzot/-
+System.AggregateException: One or more errors occurred. ---> System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.IO.EndOfStreamException: Attempted to read past the end of the stream.
+   at Raven.Client.Connection.ObservableLineStream.<Start>b__8_0(Task`1 task)
+   at System.Threading.Tasks.Task.Execute()<---
+
+2019-09-05 11:13:33.2887|85|Warn|Raven.Client.Connection.Async.AsyncServerClient|Was unable to fetch topology from primary node http://localhost also there is no cached topology
